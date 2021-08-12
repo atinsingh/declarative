@@ -8,7 +8,7 @@ pipeline{
         PRAGRA_INSTRUCTOR='Atin Singh'
     }
     options {
-        buildDiscarder(logRotator(numToKeepStr: '3')) }
+        buildDiscarder(logRotator(numToKeepStr: '3')) 
     }
     parameters { 
         choice(name: 'DEPLOY_ENV', 
